@@ -1,0 +1,41 @@
+<html>
+
+<head>
+<title>INPUT</title>
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+</head>
+<body>
+<table class="table table-striped">
+<thead>
+<tr>
+<th><H2 style= "color:navy;"> Masukkan Username dan Password </H2></th>
+</tr>
+ <tbody>
+<tr>
+	<td><p style= "color:navy; font-size:20;">Username: <input id= "myUsername" name= "username"></td>
+</tr>
+<tr>
+	<td><p style= "color:navy; font-size:20;"> Password: <input id= "myPassword" name= "password"></td>
+</tr>
+<tr><td><button id="tekan" style="color:#ecf0f1; background-color:2980b9; font-size:12px; font-family:arial; padding:1px 5px 1px 5px;" >Masuk</button></td></tr>
+</tbody>
+</table>
+
+<script>
+        document.getElementById("tekan").onclick = function() {
+		var a = document.getElementById("myUsername").value==12345;
+		var b = document.getElementById("myPassword").value==12345;
+        if (a&&b==true) {
+		alert("password anda benar");
+		window.location.href= "3.html";
+		} else 
+		window.location.href= "salah.html";
+                
+    }
+</script>
+</body>
+</html>

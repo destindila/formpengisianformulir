@@ -1,0 +1,18 @@
+h1 {
+	text-align: center;
+	color: navy;
+}
+
+p {
+	color: cadet blue;
+	font-size: 17;
+}
+
+.table-form{
+	background: url('../img/des.jpg') no-repeat;
+	-webkit-background-size: 100%;
+	-moz-background-size: 100%;
+	width: 1000px;
+	height: 1000px;
+}
+

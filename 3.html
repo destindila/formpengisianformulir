@@ -1,0 +1,362 @@
+
+<html>
+<head>
+<title>form pendaftaran</title>
+
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  
+  <link rel="stylesheet" href="css/3.css">
+<script>
+
+var NL;
+var nama;
+var NIM;
+var JK;
+var TL;
+var AR;
+var AM;
+var J;
+var F;
+var A;
+var NT;
+var K;
+var FS;
+var P1;
+var A1;
+var P2;
+var A2;
+function myFunction (){
+NL= document.getElementById ("NL").value;
+document.getElementById("s1").innerHTML = NL;
+nama= document.getElementById ("nama").value;
+document.getElementById("s2").innerHTML = nama;
+NIM= document.getElementById ("NIM").value;
+document.getElementById("s3").innerHTML = NIM;
+
+if (document.getElementById("lk").checked) {
+	var JK1="Laki-Laki";
+	document.getElementById("s4").innerHTML = JK1;
+} else if (document.getElementById("pr").checked) {
+	var JK2="Perempuan";
+	document.getElementById("s4").innerHTML = JK2;
+}
+
+TL= document.getElementById ("TL").value;
+document.getElementById("s5").innerHTML = TL;
+AR= document.getElementById ("AR").value;
+document.getElementById("s6").innerHTML = AR;
+AM= document.getElementById ("AM").value;
+document.getElementById("s7").innerHTML = AM;
+J= document.getElementById ("J").value;
+document.getElementById("s8").innerHTML = J;
+F= document.getElementById ("F").value;
+document.getElementById("s9").innerHTML = F;
+A= document.getElementById ("A").value;
+document.getElementById("s10").innerHTML = A;
+NT= document.getElementById ("NT").value;
+document.getElementById("s11").innerHTML = NT;
+K= document.getElementById ("K").value;
+document.getElementById("s12").innerHTML = K;
+FS= document.getElementById ("FS").value;
+document.getElementById("s13").innerHTML = FS;
+
+
+if (document.getElementById("dagri").checked) {
+	var M1="Kemendagri";
+	document.getElementById("s14").innerHTML = M1;
+} else if (document.getElementById("minfo").checked) {
+	var M2="Kominfo";
+	document.getElementById("s14").innerHTML = M2;
+} else if (document.getElementById("budaya").checked) {
+	var M3="Kebudayaan";
+	document.getElementById("s14").innerHTML = M3;
+} else if (document.getElementById("sosma").checked) {
+	var M4="Sosial Masyarakat";
+	document.getElementById("s14").innerHTML = M4;
+} else if (document.getElementById("advo").checked) {
+	var M5="Advojakpus";
+	document.getElementById("s14").innerHTML = M5;
+} else if (document.getElementById("kastrat").checked) {
+	var M6="Kastrat";
+	document.getElementById("s14").innerHTML = M6;
+} else if (document.getElementById("sospol").checked) {
+	var M7="Sosial Politik";
+	document.getElementById("s14").innerHTML = M7;
+} else if (document.getElementById("inkre").checked) {
+	var M8="Inovasi Kreatif";
+	document.getElementById("s14").innerHTML = M8;
+} else if (document.getElementById("eko").checked) {
+	var M9="Ekonomi";
+	document.getElementById("s14").innerHTML = M9;
+} else if (document.getElementById("pora").checked) {
+	var M10="Kemenpora";
+	document.getElementById("s14").innerHTML = M10;
+} else if (document.getElementById("psdm").checked) {
+	var M11="PSDM";
+	document.getElementById("s14").innerHTML = M11;
+} 
+
+A1= document.getElementById ("A1").value;
+document.getElementById("s16").innerHTML = A1;
+
+if (document.getElementById("da").checked) {
+	var N1="Kemendagri";
+	document.getElementById("s15").innerHTML = N1;
+} else if (document.getElementById("min").checked) {
+	var N2="Kominfo";
+	document.getElementById("s15").innerHTML = N2;
+} else if (document.getElementById("bu").checked) {
+	var N3="Kebudayaan";
+	document.getElementById("s15").innerHTML = N3;
+} else if (document.getElementById("so").checked) {
+	var N4="Sosial Masyarakat";
+	document.getElementById("s15").innerHTML = N4;
+} else if (document.getElementById("ad").checked) {
+	var N5="Advojakpus";
+	document.getElementById("s15").innerHTML = N5;
+} else if (document.getElementById("kas").checked) {
+	var N6="Kastrat";
+	document.getElementById("s15").innerHTML = N6;
+} else if (document.getElementById("sos").checked) {
+	var N7="Sosial Politik";
+	document.getElementById("s15").innerHTML = N7;
+} else if (document.getElementById("in").checked) {
+	var N8="Inovasi Kreatif";
+	document.getElementById("s15").innerHTML = N8;
+} else if (document.getElementById("ek").checked) {
+	var N9="Ekonomi";
+	document.getElementById("s15").innerHTML = N9;
+} else if (document.getElementById("po").checked) {
+	var N10="Kemenpora";
+	document.getElementById("s15").innerHTML = N10;
+} else if (document.getElementById("ps").checked) {
+	var N11="PSDM";
+	document.getElementById("s15").innerHTML = N11;
+} 
+
+A2= document.getElementById ("A2").value;
+document.getElementById("s17").innerHTML = A2;
+}
+
+	function printIT(){
+	var printContent = document.getElementById('kartu').innerHTML;
+	var restorepage = document.body.innerHTML;
+	document.body.innerHTML = printContent;
+	window.print();
+	document.body.innerHTML = restorepage;
+	}
+
+</script>
+</head>
+<body>
+<table class="table table-striped">
+<thead>
+  <tr>
+    <th><h1>Formulir Pendaftaran Staff Muda Eksekutif Mahasiswa <img src= "emub.JPG" style= "float: right; width:100px; height:100px; "></br>
+	Universitas Brawijaya</h1></th>
+  </tr>
+</thead>
+<tbody>
+ <tr>
+   <td>
+     <p>Nama Lengkap &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp : &nbsp <input id= "NL" type= "text" value= ""/></p>
+   </td>
+ </tr>
+ <tr>
+	<td>
+	<p>Nama Panggilan &nbsp &nbsp &nbsp &nbsp &nbsp : &nbsp <input id= "nama" type= "text" value= ""/></p>
+	</td>
+	</tr>
+ <tr>
+	<td>
+	<p>NIM &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp : &nbsp <input id= "NIM" type= "text" value= ""/></p>
+	</td>
+ </tr>
+<tr>
+	<td>
+	<p>Jenis Kelamin &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp : &nbsp 
+		<input type="radio" name="sex" value="Laki-Laki" id="lk"/>Laki-Laki
+		<input type="radio" name="sex" value="Perempuan" id="pr"/>Perempuan
+	</p>
+	</td>
+</tr>
+<tr>
+	<td>
+		<p>Tanggal Lahir &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp : &nbsp <input id= "TL" type= "text" value= ""/></p>
+	</td>
+</tr>
+<tr>
+	<td>
+	<p>Alamat Rumah &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp : &nbsp <input id= "AR" type= "text" value= ""/></p>
+	</td>
+</tr>
+<tr>
+	<td>
+	<p>Alamat di Malang &nbsp &nbsp &nbsp &nbsp : &nbsp <input id= "AM" type= "text" value= ""/></p>
+	</td>
+</tr>
+<tr>
+	<td>
+	<p>Jurusan &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp : &nbsp <input id= "J" type= "text" value= ""/></p>
+	</td>
+</tr>
+<tr>
+	<td>
+	<p>Fakultas &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp : &nbsp <input id= "F" type= "text" value= ""/></p>
+	</td>
+</tr>
+<tr>
+	<td>
+	<p>Angkatan &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp : &nbsp <input id= "A" type= "text" value= ""/></p>
+	</td>
+</tr>
+<tr>
+	<td>
+	<p>No. Telepon &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp : &nbsp <input type="text" name="phone" id="NT" placeholder = "eg. 0123456789"></p>
+	</td>
+</tr>
+<tr>
+	<td>
+	<p>Kendaraan yg dimiliki : &nbsp <input id= "K" type= "text" value= ""/></p>
+	<p> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp * Sepeda &nbsp &nbsp &nbsp * Sepeda Motor &nbsp &nbsp &nbsp * Mobil &nbsp &nbsp &nbsp * Lainnya* 
+	</td>
+	</tr>
+<tr>
+	<td>
+	<p>Fasilitas yang dimiliki &nbsp : &nbsp <input id= "FS" type= "text" value= ""/></p>
+	<p> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp * Hp &nbsp &nbsp &nbsp &nbsp * Laptop &nbsp &nbsp &nbsp &nbsp * Tab </p>
+	<p> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp * Ipad &nbsp &nbsp &nbsp *Kamera &nbsp &nbsp &nbsp &nbsp *Lainnya*</p>
+	</td>
+</tr>
+<tr>
+	<td>
+	<p>Kementrian yang dipilih &nbsp : &nbsp </br>
+	<p> &nbsp &nbsp &nbsp &nbsp Pilihan 1: </br>
+	&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp <input type="radio" name="menteri" value="Kemendagri" id="dagri"/>Kemendagri &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp <input type="radio" name="menteri" value="Kebudayaan" id="budaya"/>Kebudayaan</br>
+	&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp <input type="radio" name="menteri" value="Kominfo" id="minfo"/>Kominfo &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp <input type="radio" name="menteri" value="Sosial Masyarakat" id="sosma"/>Sosial Masyarakat</br> 
+	&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp <input type="radio" name="menteri" value="Advojakpus" id="advo"/>Advojakpus &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp <input type="radio" name="menteri" value="Kastrat" id="kastrat"/>Kastrat</br>
+	&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp <input type="radio" name="menteri" value="Kominfo" id="sospol"/>Sosial Politik &nbsp &nbsp &nbsp &nbsp &nbsp <input type="radio" name="menteri" value="Inovasi Kreatif" id="inkre"/>Inovasi Kreatif</br>
+	&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp <input type="radio" name="menteri" value="Ekonomi" id="eko"/>Ekonomi &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp <input type="radio" name="menteri" value="Kemenpora" id="pora"/>Kemenpora </br>
+	&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp <input type="radio" name="menteri" value="PSDM" id="psdm"/>PSDM </br>
+	</p>
+	<p> &nbsp &nbsp &nbsp &nbsp Alasan memilih: <input id= "A1" type= "text" value= ""/></p>
+	<p> &nbsp &nbsp &nbsp &nbsp Pilihan 2: </br>
+	&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp <input type="radio" name="men" value="Kemendagri" id="da"/>Kemendagri &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp <input type="radio" name="men" value="Kebudayaan" id="bu"/>Kebudayaan</br>
+	&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp <input type="radio" name="men" value="Kominfo" id="min"/>Kominfo &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp <input type="radio" name="men" value="Sosial Masyarakat" id="so"/>Sosial Masyarakat</br> 
+	&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp <input type="radio" name="men" value="Advojakpus" id="ad"/>Advojakpus &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp <input type="radio" name="men" value="Kastrat" id="kas"/>Kastrat</br>
+	&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp <input type="radio" name="men" value="Kominfo" id="sos"/>Sosial Politik &nbsp &nbsp &nbsp &nbsp &nbsp <input type="radio" name="men" value="Inovasi Kreatif" id="in"/>Inovasi Kreatif</br>
+	&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp <input type="radio" name="men" value="Ekonomi" id="ek"/>Ekonomi &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp <input type="radio" name="men" value="Kemenpora" id="po"/>Kemenpora </br>
+	&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp <input type="radio" name="men" value="PSDM" id="ps"/>PSDM </br>
+	</p>
+	<p> &nbsp &nbsp &nbsp &nbsp Alasan memilih: <input id= "A2" type= "text" value= ""/></p>
+	</td>
+</tr>
+<tr>
+	<td>
+	<p><button onclick= "myFunction()">SAVE</button></p>
+	</td>
+</tr>
+</tbody>
+</table>
+<p><div  class="container" id='kartu'>
+<table align="center" class="table table-striped table-form">
+<thead>
+  <tr>
+    <th><h1>Formulir Pendaftaran Staff Muda Eksekutif Mahasiswa <img src= "emub.JPG" style= "float: right; width:100px; height:100px; "></br>
+	Universitas Brawijaya</h1></th>
+  </tr>
+</thead>
+<tbody>
+<td><p><H4>Nama Lengkap &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp : </H4><span id="s1"></span></p></td>
+</tr>
+<tr>
+<td><p><H4>Nama Panggilan &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp : </H4><span id="s2"></span></p></td>
+</tr>
+<tr>
+<td><p><H4>NIM &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp : </H4><span id="s3"></span></p></td>
+</tr>
+<tr>
+<td><p><H4>Jenis Kelamin &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp : </H4><span id="s4"></span></p></td>
+</tr>
+<tr>
+<td><p><H4>Tanggal Lahir &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp : </H4><span id="s5"></span></p></td>
+</tr>
+<tr>
+<td><p><H4>Alamat Rumah &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp : </H4><span id="s6"></span></p></td>
+</tr>
+<tr>
+<td><p><H4>Alamat di Malang &nbsp &nbsp &nbsp &nbsp &nbsp : </H4><span id="s7"></span></p></td>
+</tr>
+<tr>
+<td><p><H4>Jurusan &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp : </H4><span id="s8"></span></p></td>
+</tr>
+<tr>
+<td><p><H4>Fakultas &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp : </H4><span id="s9"></span></p></td>
+</tr>
+<tr>
+<td><p><H4>Angkatan &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp : </H4><span id="s10"></span></p></td>
+</tr>
+<tr>
+<td><p><H4>No. Telepon &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp : </H4><span id="s11"></span></p></td>
+</tr>
+<tr>
+<td><p><H4>Kendaraan yg dimiliki &nbsp &nbsp : </H4><span id="s12"></span></p></td>
+</tr>
+<tr>
+<td><p><H4>Fasilitas yang dimiliki &nbsp &nbsp : </H4><span id="s13"></span></p></td>
+</tr>
+<tr>
+<td><p><H4>Pilihan kementrian &nbsp &nbsp &nbsp &nbsp : </H4></p></br></br>
+<p> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Pilihan 1: <span id="s14"></span></p>
+<p> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Alasan memilih: <span id="s16"></span></br></br></p>
+<p> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Pilihan 2: <span id="s15"></span></br></br></p>
+<p> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Alasan memilih: <span id="s17"></span></br></br></p></td>
+</tr>
+<tr>
+<td><p style= "color:black; font-size:14; float: right; "> Malang, &nbsp &nbsp April 2016</br>
+</br></br></br> &nbsp &nbsp ( &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp )</p>
+</td></tr>
+</tbody>
+</table>
+</div></p>
+<input type="button" id="but2" value="PRINT" onclick="printIT()"/>
+</br></br>
+
+<div id="card">
+<table border="1">
+  <tr>
+    <td><h1>NOTE!!!</td>
+  </tr>
+<tr>
+	<td>
+	<p style= "color:navy; font-size:15;">Jadwal Pengumpulan Berkas Mulai tanggal 10-15 April 2016</p>
+	</td>
+</tr>
+<tr>
+	<td>
+	<p style= "color:navy; font-size:15;">Jadwal Screening dimulai tanggal 11-16 April 2016</p>
+	</td>
+	</tr>
+<tr>
+	<td>
+	<p style= "color:navy; font-size:15;">Pukul 09.00-16.00 WIB</p>
+	</td>
+</tr>
+<tr>
+	<td>
+	<p style= "color:navy; font-size:15;">Tempat Screening dan Pengumpulan Berkas di ruang UKM EM Universitas Brawijaya</p>
+	</td>
+</tr>
+<tr>
+	<td>
+	<p style= "color:navy; font-size:15;">Membawa foto ukuran 4x6(berwana) saat pengumpulan berkas</p>
+	</td>
+</tr>
+</table>
+</div>
+</body>
+</html>
